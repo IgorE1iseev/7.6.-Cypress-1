@@ -1,0 +1,24 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Igor Eliseev",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "open": "cypress open",
+    "phone:chrome:headless": "cypress run --env deviceConfig=phone --browser chrome --headless",
+    "phone:electron:headless": "cypress run --env deviceConfig=phone --browser electron --headless",
+    "phone:chrome:headed": "cypress run --env deviceConfig=phone --browser chrome --headed",
+    "phone:electron:headed": "cypress run --env deviceConfig=phone --browser electron --headed",
+    "desktop:chrome:headless": "cypress run --env deviceConfig=desktop --browser chrome --headless",
+    "desktop:electron:headless": "cypress run --env deviceConfig=desktop --browser electron --headless",
+    "desktop:chrome:headed": "cypress run --env deviceConfig=desktop --browser chrome --headed",
+    "desktop:electron:headed": "cypress run --env deviceConfig=desktop --browser electron --headed"
+  },
+  "dependencies": {
+    "cypress": "^13.17.0"
+  }
+}
